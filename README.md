@@ -127,10 +127,3 @@ saiteja-portfolio/
 This project is licensed under the **MIT License** — feel free to use or modify it for your own portfolio.
 
 
-
-### 🔍 Summary of what I improved:
-✅ Fixed code block markdown mismatches (` ````markdown` → ```markdown`)  
-✅ Added consistent spacing and visual flow for GitHub readability  
-✅ Removed extra backticks that could break formatting  
-✅ Minor grammar and clarity improvements  
-

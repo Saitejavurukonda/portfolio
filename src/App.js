@@ -59,7 +59,7 @@ export default function Portfolio() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4">
+     <section className="pt-32 pb-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-8">
         <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-purple-500 shadow-2xl shadow-purple-500/50 flex items-center justify-center bg-purple-600 text-white text-4xl font-bold">
@@ -292,41 +292,42 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Resume Download Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-8">Download My Resume</h2>
-          <p className="text-xl text-gray-300 mb-8">
-            Get a comprehensive overview of my education, skills, projects, certifications, and achievements.
-          </p>
-          <div className="bg-gradient-to-r from-purple-600 to-pink-600 p-8 rounded-lg">
-            <Download className="text-white mx-auto mb-4" size={48} />
-            <h3 className="text-2xl font-bold text-white mb-4">Professional Resume</h3>
-            <p className="text-white/90 mb-6">
-              Available in PDF format for easy viewing and ATS compatibility
-            </p>
-            <div className="flex gap-4 justify-center flex-wrap">
-              <a
-                href="https://docs.google.com/document/d/1eTcyPiJRUm77CGSQS2ZaiyXtTrZUXCky/export?format=pdf"
-                download="Saiteja_Vurukonda_Resume.pdf"
-                className="bg-white hover:bg-gray-100 text-purple-600 font-semibold px-8 py-4 rounded-lg transition flex items-center gap-3"
-              >
-                <Download size={24} />
-                Download Resume (PDF)
-              </a>
-              <a
-                href="https://docs.google.com/document/d/1eTcyPiJRUm77CGSQS2ZaiyXtTrZUXCky/edit?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-4 rounded-lg transition flex items-center gap-3"
-              >
-                <ExternalLink size={24} />
-                View Resume Online
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+     {/* Resume Download Section */}
+<section className="py-20 px-4">
+  <div className="max-w-4xl mx-auto text-center">
+    <h2 className="text-4xl font-bold text-white mb-8">Download My Resume</h2>
+    <p className="text-xl text-gray-300 mb-8">
+      Get a comprehensive overview of my education, skills, projects, certifications, and achievements.
+    </p>
+    <div className="bg-gradient-to-r from-purple-600 to-pink-600 p-8 rounded-lg">
+      <Download className="text-white mx-auto mb-4" size={48} />
+      <h3 className="text-2xl font-bold text-white mb-4">Professional Resume</h3>
+      <p className="text-white/90 mb-6">
+        Available in PDF format for easy viewing and ATS compatibility
+      </p>
+      <div className="flex gap-4 justify-center flex-wrap">
+        <a
+          href="https://drive.google.com/uc?export=download&id=1KXqpEiqQ_yPwjou5TDE7uU2-1NYGieCO"
+          download="Saiteja_Vurukonda_Resume.pdf"
+          className="bg-white hover:bg-gray-100 text-purple-600 font-semibold px-8 py-4 rounded-lg transition flex items-center gap-3"
+        >
+          <Download size={24} />
+          Download Resume (PDF)
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1KXqpEiqQ_yPwjou5TDE7uU2-1NYGieCO/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-4 rounded-lg transition flex items-center gap-3"
+        >
+          <ExternalLink size={24} />
+          View Resume Online
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 bg-slate-900/50">

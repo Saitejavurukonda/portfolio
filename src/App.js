@@ -46,7 +46,7 @@ export default function Portfolio() {
       <nav className="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md z-50 border-b border-purple-500/20">
         <div className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold text-white">Saiteja Vurukonda</h1>
+            <h1 className="text-2xl font-bold text-white">Vurukonda Saiteja</h1>
             <div className="hidden md:flex gap-6">
               <a href="#about" className="text-gray-300 hover:text-purple-400 transition">About</a>
               <a href="#education" className="text-gray-300 hover:text-purple-400 transition">Education</a>
@@ -62,17 +62,10 @@ export default function Portfolio() {
       <section className="pt-32 pb-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-8">
-         <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-purple-500 shadow-2xl shadow-purple-500/50 flex items-center justify-center bg-purple-600 text-white text-4xl font-bold">
-  <img
-    src="https://drive.google.com/thumbnail?id=1QuRKMJLubSuQumfDffoHkR5v7h4UcXv1&sz=w400"
-    alt="Saiteja Vurukonda"
-    className="w-full h-full object-contain bg-white p-1"
-    onError={(e) => {
-      e.target.style.display = 'none';
-      e.target.parentNode.textContent = 'VS';
-    }}
-  />
+        <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-purple-500 shadow-2xl shadow-purple-500/50 flex items-center justify-center bg-purple-600 text-white text-4xl font-bold">
+  VS
 </div>
+
 
 
 

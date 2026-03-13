@@ -1,189 +1,193 @@
-import React from "react";
-import {
-  Github,
-  Linkedin,
-  Download,
-  ExternalLink
-} from "lucide-react";
+import React from 'react';
+import { Github, Linkedin, Mail, Phone, MapPin, Download, ExternalLink, Award, BookOpen, Code, Briefcase } from 'lucide-react';
 
 export default function Portfolio() {
 
+  const skills = {
+    languages: ['C', 'Java', 'Python'],
+    web: ['HTML', 'CSS', 'JavaScript', 'React.js'],
+    backend: ['MySQL', 'JDBC', 'REST API', 'Node.js'],
+    tools: ['VS Code', 'IntelliJ IDEA', 'Git', 'GitHub'],
+    concepts: ['OOP', 'OS', 'DBMS', 'DSA', 'SDLC', 'Computer Networks']
+  };
+
   const projects = [
     {
-      title: "WeatherTrack - Real-Time Weather Website",
-      tech: "HTML, CSS, JavaScript, WeatherAPI",
-      description:
-        "A responsive website that fetches real-time weather data and displays current weather along with a 3-day forecast.",
-      demo: "https://saitejavurukonda.github.io/WeatherTrack-RealTime/",
-      github: "https://github.com/Saitejavurukonda/WeatherTrack-RealTime"
+      title: 'WeatherTrack - Real-Time Weather Website',
+      tech: 'HTML, CSS, JavaScript, WeatherAPI',
+      description: 'A responsive website that fetches real-time weather data and displays current weather along with a 3-day forecast.',
+      demo: 'https://saitejavurukonda.github.io/WeatherTrack-RealTime/',
+      github: 'https://github.com/Saitejavurukonda/WeatherTrack-RealTime'
     },
     {
-      title: "Bank Management System",
-      tech: "Java, MySQL, JDBC",
-      description:
-        "Console-based Java & MySQL Bank Management System with Admin and Customer roles.",
-      github: "https://github.com/Saitejavurukonda/BankManagementSystem"
+      title: 'Bank Management System',
+      tech: 'Java, MySQL, JDBC',
+      description: 'Console-based Java & MySQL Bank Management System with Admin and Customer roles.',
+      github: 'https://github.com/Saitejavurukonda/BankManagementSystem'
     }
   ];
 
+  const certifications = [
+    { name: 'Introduction to Internet of Things', provider: 'NPTEL (IIT Kharagpur)', date: 'Jan–Apr 2024' },
+    { name: 'Complete SQL Bootcamp From Zero to Hero in SQL', provider: 'Udemy', date: 'July 2025' },
+    { name: 'Java (Basic)', provider: 'HackerRank', date: 'Aug 2025' },
+    { name: 'Microsoft Certified Azure AI Fundamentals', provider: 'Microsoft', date: 'Aug 2025' }
+  ];
+
+  const achievements = [
+    'Elite+ Silver – NPTEL IoT Certification, IIT Kharagpur',
+    '5-star badges in Java & SQL – HackerRank',
+    'Top 1% nationally – Naukri Campus Young Turks 2025',
+    'Campus Ambassador – Devtown'
+  ];
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
 
-      {/* HERO */}
+<div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
 
-      <section className="pt-32 pb-20 px-4 text-center">
+{/* HERO */}
 
-        <h1 className="text-6xl font-bold text-white mb-4">
-          Vurukonda Saiteja
-        </h1>
+<section className="pt-32 pb-20 px-4 text-center">
 
-        <p className="text-2xl text-purple-300 mb-6">
-          Software Developer | Tech Enthusiast
-        </p>
+<h1 className="text-6xl font-bold text-white mb-4">
+Vurukonda Saiteja
+</h1>
 
-        <div className="flex gap-4 justify-center flex-wrap">
+<p className="text-2xl text-purple-300 mb-6">
+Software Developer | Tech Enthusiast
+</p>
 
-          <a
-            href="https://github.com/Saitejavurukonda"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg"
-          >
-            <Github size={20} />
-            GitHub
-          </a>
+<div className="flex gap-4 justify-center flex-wrap">
 
-          <a
-            href="https://linkedin.com/in/saiteja-vurukonda"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg"
-          >
-            <Linkedin size={20} />
-            LinkedIn
-          </a>
+<a href="https://github.com/Saitejavurukonda"
+target="_blank"
+className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg">
+<Github size={20}/>
+GitHub
+</a>
 
-        </div>
+<a href="https://linkedin.com/in/saiteja-vurukonda"
+target="_blank"
+className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg">
+<Linkedin size={20}/>
+LinkedIn
+</a>
 
-      </section>
+</div>
 
-      {/* PROJECTS */}
+</section>
 
-      <section className="py-20 px-4">
+{/* PROJECTS */}
 
-        <h2 className="text-4xl text-white text-center mb-12">
-          Projects
-        </h2>
+<section className="py-20 px-4">
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+<h2 className="text-4xl text-white text-center mb-12">
+Projects
+</h2>
 
-          {projects.map((project, i) => (
+<div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
 
-            <div
-              key={i}
-              className="bg-slate-800 p-8 rounded-lg"
-            >
+{projects.map((project,i)=>(
 
-              <h3 className="text-2xl text-white mb-2">
-                {project.title}
-              </h3>
+<div key={i} className="bg-slate-800 p-8 rounded-lg">
 
-              <p className="text-purple-400 mb-3">
-                {project.tech}
-              </p>
+<h3 className="text-2xl text-white mb-2">
+{project.title}
+</h3>
 
-              <p className="text-gray-300 mb-4">
-                {project.description}
-              </p>
+<p className="text-purple-400 mb-3">
+{project.tech}
+</p>
 
-              <div className="flex gap-4">
+<p className="text-gray-300 mb-4">
+{project.description}
+</p>
 
-                {project.demo && (
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-purple-600 text-white px-4 py-2 rounded"
-                  >
-                    <ExternalLink size={16} />
-                    Demo
-                  </a>
-                )}
+<div className="flex gap-4">
 
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-slate-700 text-white px-4 py-2 rounded"
-                >
-                  <Github size={16} />
-                  Code
-                </a>
+{project.demo && (
+<a href={project.demo} target="_blank"
+className="flex items-center gap-2 bg-purple-600 text-white px-4 py-2 rounded">
+<ExternalLink size={16}/>
+Demo
+</a>
+)}
 
-              </div>
+<a href={project.github} target="_blank"
+className="flex items-center gap-2 bg-slate-700 text-white px-4 py-2 rounded">
+<Github size={16}/>
+Code
+</a>
 
-            </div>
+</div>
 
-          ))}
+</div>
 
-        </div>
+))}
 
-      </section>
+</div>
 
-      {/* RESUME */}
+</section>
 
-      <section className="py-20 px-4">
+{/* RESUME */}
 
-        <div className="max-w-4xl mx-auto text-center">
+<section className="py-20 px-4">
 
-          <h2 className="text-4xl text-white mb-8">
-            Download My Resume
-          </h2>
+<div className="max-w-4xl mx-auto text-center">
 
-          <div className="bg-gradient-to-r from-purple-600 to-pink-600 p-8 rounded-lg">
+<h2 className="text-4xl text-white mb-8">
+Download My Resume
+</h2>
 
-            <Download className="text-white mx-auto mb-4" size={48} />
+<div className="bg-gradient-to-r from-purple-600 to-pink-600 p-8 rounded-lg">
 
-            <h3 className="text-2xl text-white mb-6">
-              Professional Resume
-            </h3>
+<Download className="text-white mx-auto mb-4" size={48}/>
 
-            <div className="flex gap-4 justify-center flex-wrap">
+<h3 className="text-2xl text-white mb-6">
+Professional Resume
+</h3>
 
-              <a
-                href="https://drive.google.com/uc?export=download&id=1TzBtdrf1uRFXf5CarA61T_n7IEnhpFq2"
-                className="bg-white text-purple-600 px-8 py-4 rounded-lg flex items-center gap-3"
-              >
-                <Download size={24} />
-                Download Resume
-              </a>
+<div className="flex gap-4 justify-center flex-wrap">
 
-              <a
-                href="https://drive.google.com/file/d/1TzBtdrf1uRFXf5CarA61T_n7IEnhpFq2/view"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-purple-700 text-white px-8 py-4 rounded-lg flex items-center gap-3"
-              >
-                <ExternalLink size={24} />
-                View Resume
-              </a>
+<a
+href="https://drive.google.com/uc?export=download&id=1TzBtdrf1uRFXf5CarA61T_n7IEnhpFq2"
+download="Saiteja_Vurukonda_Resume.pdf"
+className="bg-white text-purple-600 px-8 py-4 rounded-lg flex items-center gap-3">
 
-            </div>
+<Download size={24}/>
+Download Resume
 
-          </div>
+</a>
 
-        </div>
+<a
+href="https://drive.google.com/file/d/1TzBtdrf1uRFXf5CarA61T_n7IEnhpFq2/view"
+target="_blank"
+rel="noopener noreferrer"
+className="bg-purple-700 text-white px-8 py-4 rounded-lg flex items-center gap-3">
 
-      </section>
+<ExternalLink size={24}/>
+View Resume Online
 
-      {/* FOOTER */}
+</a>
 
-      <footer className="py-8 text-center text-gray-400 border-t border-purple-500">
+</div>
 
-        © 2026 Vurukonda Saiteja
+</div>
 
-      </footer>
+</div>
 
-    </div>
-  );
-}
+</section>
+
+{/* FOOTER */}
+
+<footer className="py-8 text-center text-gray-400 border-t border-purple-500">
+
+© 2026 Vurukonda Saiteja
+
+</footer>
+
+</div>
+
+);
+
+} 

@@ -314,12 +314,12 @@ export default function Portfolio() {
           <Download size={24} />
           Download Resume (PDF)
         </a>
-        
-          <a
-  href="https://drive.google.com/uc?export=download&id=1TzBtdrf1uRFXf5CarA61T_n7IEnhpFq2"
-  download="Saiteja_Vurukonda_Resume.pdf"
-  className="bg-white hover:bg-gray-100 text-purple-600 font-semibold px-8 py-4 rounded-lg transition flex items-center gap-3"
->
+        <a
+          href="https://drive.google.com/file/d/1KXqpEiqQ_yPwjou5TDE7uU2-1NYGieCO/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-4 rounded-lg transition flex items-center gap-3"
+        >
           <ExternalLink size={24} />
           View Resume Online
         </a>
@@ -375,4 +375,4 @@ export default function Portfolio() {
       </footer>
     </div>
   );
-} 
+}

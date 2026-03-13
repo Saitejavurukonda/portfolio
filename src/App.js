@@ -1,4 +1,4 @@
-mport React from 'react';
+drct in github app.js file import React from 'react';
 import { Github, Linkedin, Mail, Phone, MapPin, Download, ExternalLink, Award, BookOpen, Code, Briefcase } from 'lucide-react';
 
 export default function Portfolio() {
@@ -375,4 +375,4 @@ export default function Portfolio() {
       </footer>
     </div>
   );
-} 
+}

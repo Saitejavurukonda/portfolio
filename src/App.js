@@ -179,58 +179,91 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Skills Section */}
-      <section className="py-20 px-4 bg-slate-900/50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center flex items-center justify-center gap-3">
-            <Code className="text-purple-400" />
-            Technical Skills
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-slate-800/50 p-6 rounded-lg border border-purple-500/20">
-              <h3 className="text-xl font-semibold text-purple-400 mb-4">Programming Languages</h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.languages.map((skill, i) => (
-                  <span key={i} className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm">{skill}</span>
-                ))}
-              </div>
-            </div>
-            <div className="bg-slate-800/50 p-6 rounded-lg border border-purple-500/20">
-              <h3 className="text-xl font-semibold text-purple-400 mb-4">Web Technologies</h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.web.map((skill, i) => (
-                  <span key={i} className="bg-blue-600/20 text-blue-300 px-3 py-1 rounded-full text-sm">{skill}</span>
-                ))}
-              </div>
-            </div>
-            <div className="bg-slate-800/50 p-6 rounded-lg border border-purple-500/20">
-              <h3 className="text-xl font-semibold text-purple-400 mb-4">Database & Backend</h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.backend.map((skill, i) => (
-                  <span key={i} className="bg-green-600/20 text-green-300 px-3 py-1 rounded-full text-sm">{skill}</span>
-                ))}
-              </div>
-            </div>
-            <div className="bg-slate-800/50 p-6 rounded-lg border border-purple-500/20">
-              <h3 className="text-xl font-semibold text-purple-400 mb-4">Tools</h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.tools.map((skill, i) => (
-                  <span key={i} className="bg-orange-600/20 text-orange-300 px-3 py-1 rounded-full text-sm">{skill}</span>
-                ))}
-              </div>
-            </div>
-            <div className="bg-slate-800/50 p-6 rounded-lg border border-purple-500/20 lg:col-span-2">
-              <h3 className="text-xl font-semibold text-purple-400 mb-4">Core Concepts</h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.concepts.map((skill, i) => (
-                  <span key={i} className="bg-pink-600/20 text-pink-300 px-3 py-1 rounded-full text-sm">{skill}</span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    {/* Skills Section */}
+<section className="py-20 px-4 bg-slate-900/50">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-4xl font-bold text-white mb-12 text-center flex items-center justify-center gap-3">
+      <Code className="text-purple-400" />
+      Technical Skills
+    </h2>
 
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      {/* Programming Languages */}
+      <div className="bg-slate-800/50 p-6 rounded-lg border border-purple-500/20">
+        <h3 className="text-xl font-semibold text-purple-400 mb-4">Programming Languages</h3>
+        <div className="flex flex-wrap gap-2">
+          {skills.languages.map((skill, i) => (
+            <span key={i} className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-sm">
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Web Technologies */}
+      <div className="bg-slate-800/50 p-6 rounded-lg border border-purple-500/20">
+        <h3 className="text-xl font-semibold text-purple-400 mb-4">Web Technologies</h3>
+        <div className="flex flex-wrap gap-2">
+          {skills.web.map((skill, i) => (
+            <span key={i} className="bg-blue-600/20 text-blue-300 px-3 py-1 rounded-full text-sm">
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Database & Backend */}
+      <div className="bg-slate-800/50 p-6 rounded-lg border border-purple-500/20">
+        <h3 className="text-xl font-semibold text-purple-400 mb-4">Database & Backend</h3>
+        <div className="flex flex-wrap gap-2">
+          {skills.backend.map((skill, i) => (
+            <span key={i} className="bg-green-600/20 text-green-300 px-3 py-1 rounded-full text-sm">
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Cloud Technologies */}
+      <div className="bg-slate-800/50 p-6 rounded-lg border border-purple-500/20">
+        <h3 className="text-xl font-semibold text-purple-400 mb-4">Cloud Technologies</h3>
+        <div className="flex flex-wrap gap-2">
+          {skills.cloud.map((skill, i) => (
+            <span key={i} className="bg-cyan-600/20 text-cyan-300 px-3 py-1 rounded-full text-sm">
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Tools */}
+      <div className="bg-slate-800/50 p-6 rounded-lg border border-purple-500/20">
+        <h3 className="text-xl font-semibold text-purple-400 mb-4">Tools</h3>
+        <div className="flex flex-wrap gap-2">
+          {skills.tools.map((skill, i) => (
+            <span key={i} className="bg-orange-600/20 text-orange-300 px-3 py-1 rounded-full text-sm">
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Core Concepts */}
+      <div className="bg-slate-800/50 p-6 rounded-lg border border-purple-500/20 lg:col-span-2">
+        <h3 className="text-xl font-semibold text-purple-400 mb-4">Core Concepts</h3>
+        <div className="flex flex-wrap gap-2">
+          {skills.concepts.map((skill, i) => (
+            <span key={i} className="bg-pink-600/20 text-pink-300 px-3 py-1 rounded-full text-sm">
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
       {/* Projects Section */}
       <section id="projects" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">

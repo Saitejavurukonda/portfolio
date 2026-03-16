@@ -1,28 +1,41 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Phone, MapPin, Download, ExternalLink, Award, BookOpen, Code, Briefcase } from 'lucide-react';
 
-const skills = {
-  languages: ['Java', 'Python (Basics)'],
+export default function Portfolio() {
 
-  web: ['HTML', 'CSS', 'JavaScript'],
+  const skills = {
+    languages: ['Java', 'Python (Basics)'],
 
-  backend: ['MySQL', 'JDBC', 'REST API'],
+    web: ['HTML', 'CSS', 'JavaScript'],
 
-  tools: ['VS Code', 'GitHub'],
+    backend: ['MySQL', 'JDBC', 'REST API'],
 
-  concepts: [
-    'OOP',
-    'DBMS',
-    'Machine Learning',
-    'IoT',
-    'Cloud Computing',
-    'Problem Solving',
-    'Teamwork',
-    'Leadership',
-    'Adaptability',
-    'Quick Learner'
-  ]
-};
+    cloud: [
+      'AWS EC2',
+      'AWS S3',
+      'AWS IAM',
+      'AWS VPC',
+      'AWS RDS',
+      'Serverless',
+      'Networking & Security',
+      'AWS SAA Concepts'
+    ],
+
+    tools: ['VS Code', 'GitHub'],
+
+    concepts: [
+      'OOP',
+      'DBMS',
+      'Machine Learning',
+      'IoT',
+      'Cloud Computing',
+      'Problem Solving',
+      'Teamwork',
+      'Leadership',
+      'Adaptability',
+      'Quick Learner'
+    ]
+  };
 
   const projects = [
     {

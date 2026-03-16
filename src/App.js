@@ -415,50 +415,94 @@ import { Github, Linkedin, Mail, Phone, MapPin, Download, ExternalLink, Award, B
     </div>
   </div>
 </section>
-      {/* Contact Section */}
-      <section id="contact" className="py-20 px-4 bg-slate-900/50">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-8">Let's Connect</h2>
-          <p className="text-xl text-gray-300 mb-12">
-            Interested in collaborating or have an opportunity? Feel free to reach out!
-          </p>
-          <div className="grid md:grid-cols-3 gap-6">
-            <a href="mailto:saitejavurukonda5@gmail.com" className="bg-slate-800/50 p-6 rounded-lg border border-purple-500/20 hover:border-purple-500/40 transition">
-              <Mail className="text-purple-400 mx-auto mb-3" size={32} />
-              <p className="text-white font-semibold mb-2">Email</p>
-              <p className="text-gray-400 text-sm break-all">saitejavurukonda5@gmail.com</p>
-            </a>
-            <a href="tel:+919959207670" className="bg-slate-800/50 p-6 rounded-lg border border-purple-500/20 hover:border-purple-500/40 transition">
-              <Phone className="text-purple-400 mx-auto mb-3" size={32} />
-              <p className="text-white font-semibold mb-2">Phone</p>
-              <p className="text-gray-400 text-sm">+91 9959207670</p>
-            </a>
-            <div className="bg-slate-800/50 p-6 rounded-lg border border-purple-500/20">
-              <MapPin className="text-purple-400 mx-auto mb-3" size={32} />
-              <p className="text-white font-semibold mb-2">Location</p>
-              <p className="text-gray-400 text-sm">Hyderabad, Telangana</p>
-            </div>
-          </div>
-        </div>
-      </section>
+     {/* Contact Section */}
+<section id="contact" className="py-20 px-4 bg-slate-900/50">
+  <div className="max-w-5xl mx-auto text-center">
 
-      {/* Footer */}
-      <footer className="py-8 px-4 bg-slate-900 border-t border-purple-500/20">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="text-gray-400">© 2025 Vurukonda Saiteja. All rights reserved.</p>
-          <div className="flex gap-6 justify-center mt-4">
-            <a href="https://github.com/Saitejavurukonda" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition">
-              <Github size={24} />
-            </a>
-            <a href="https://linkedin.com/in/saiteja-vurukonda" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition">
-              <Linkedin size={24} />
-            </a>
-            <a href="mailto:saitejavurukonda5@gmail.com" className="text-gray-400 hover:text-purple-400 transition">
-              <Mail size={24} />
-            </a>
-          </div>
-        </div>
-      </footer>
+    <h2 className="text-4xl font-bold text-white mb-6">Let's Connect</h2>
+
+    <p className="text-lg text-gray-300 mb-12">
+      Interested in collaborating or have an opportunity? Feel free to reach out!
+    </p>
+
+    <div className="grid md:grid-cols-3 gap-6">
+
+      {/* Email */}
+      <a
+        href="mailto:saitejavurukonda5@gmail.com"
+        className="bg-slate-800/50 p-6 rounded-lg border border-purple-500/20 hover:border-purple-400 hover:scale-105 transition"
+      >
+        <Mail className="text-purple-400 mx-auto mb-3" size={32} />
+        <p className="text-white font-semibold mb-1">Email</p>
+        <p className="text-gray-400 text-sm break-all">
+          saitejavurukonda5@gmail.com
+        </p>
+      </a>
+
+      {/* Phone */}
+      <a
+        href="tel:+919959207670"
+        className="bg-slate-800/50 p-6 rounded-lg border border-purple-500/20 hover:border-purple-400 hover:scale-105 transition"
+      >
+        <Phone className="text-purple-400 mx-auto mb-3" size={32} />
+        <p className="text-white font-semibold mb-1">Phone</p>
+        <p className="text-gray-400 text-sm">
+          +91 9959207670
+        </p>
+      </a>
+
+      {/* Location */}
+      <div className="bg-slate-800/50 p-6 rounded-lg border border-purple-500/20">
+        <MapPin className="text-purple-400 mx-auto mb-3" size={32} />
+        <p className="text-white font-semibold mb-1">Location</p>
+        <p className="text-gray-400 text-sm">
+          Hyderabad, Telangana
+        </p>
+      </div>
+
     </div>
-  );
-}
+  </div>
+</section>
+
+
+{/* Footer */}
+<footer className="py-8 px-4 bg-slate-950 border-t border-slate-800">
+
+  <div className="max-w-6xl mx-auto text-center">
+
+    <p className="text-gray-400 text-sm">
+      © 2025 Vurukonda Saiteja. All rights reserved.
+    </p>
+
+    <div className="flex gap-6 justify-center mt-4">
+
+      <a
+        href="https://github.com/Saitejavurukonda"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-gray-400 hover:text-purple-400 transition"
+      >
+        <Github size={24}/>
+      </a>
+
+      <a
+        href="https://linkedin.com/in/saiteja-vurukonda"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-gray-400 hover:text-purple-400 transition"
+      >
+        <Linkedin size={24}/>
+      </a>
+
+      <a
+        href="mailto:saitejavurukonda5@gmail.com"
+        className="text-gray-400 hover:text-purple-400 transition"
+      >
+        <Mail size={24}/>
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>

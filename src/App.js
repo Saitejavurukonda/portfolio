@@ -471,7 +471,7 @@ import { Github, Linkedin, Mail, Phone, MapPin, Download, ExternalLink, Award, B
   <div className="max-w-6xl mx-auto text-center">
 
     <p className="text-gray-400 text-sm">
-      © 2025 Vurukonda Saiteja. All rights reserved.
+      © 2026 Vurukonda Saiteja. All rights reserved.
     </p>
 
     <div className="flex gap-6 justify-center mt-4">

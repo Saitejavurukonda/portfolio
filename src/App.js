@@ -445,7 +445,9 @@ import { Github, Linkedin, Mail, Phone, MapPin, Download, ExternalLink, Award, B
       {/* Footer */}
       <footer className="py-8 px-4 bg-slate-900 border-t border-purple-500/20">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-gray-400">© 2025 Vurukonda Saiteja. All rights reserved.</p>
+        <p className="text-gray-400 text-sm">
+  © {new Date().getFullYear()} Vurukonda Saiteja. All rights reserved.
+</p>
           <div className="flex gap-6 justify-center mt-4">
             <a href="https://github.com/Saitejavurukonda" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition">
               <Github size={24} />

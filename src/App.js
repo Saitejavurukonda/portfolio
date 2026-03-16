@@ -314,7 +314,7 @@ export default function Portfolio() {
 
         {/* Download Resume */}
         <a
-          href="https://drive.google.com/uc?export=download&id=NEW_FILE_ID"
+          href="https://drive.google.com/uc?export=download&id=1TzBtdrf1uRFXf5CarA61T_n7IEnhpFq2"
           download="Saiteja_Vurukonda_Resume.pdf"
           className="bg-white hover:bg-gray-100 text-purple-600 font-semibold px-8 py-4 rounded-lg transition flex items-center gap-3"
         >
@@ -324,7 +324,7 @@ export default function Portfolio() {
 
         {/* View Resume */}
         <a
-          href="https://drive.google.com/file/d/NEW_FILE_ID/view?usp=sharing"
+          href="https://drive.google.com/file/d/1TzBtdrf1uRFXf5CarA61T_n7IEnhpFq2/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-4 rounded-lg transition flex items-center gap-3"
@@ -337,7 +337,6 @@ export default function Portfolio() {
     </div>
   </div>
 </section>
-
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 bg-slate-900/50">
         <div className="max-w-4xl mx-auto text-center">

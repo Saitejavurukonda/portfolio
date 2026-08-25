@@ -143,7 +143,7 @@ import { Github, Linkedin, Mail, Phone, MapPin, Download, ExternalLink, Award, B
             <div className="bg-slate-800/50 p-8 rounded-lg border border-purple-500/20">
               <h3 className="text-2xl font-semibold text-purple-400 mb-4">Who I Am</h3>
               <p className="text-gray-300 leading-relaxed">
-                I'm a dedicated Computer Science Engineering (IoT) student at Malla Reddy Engineering College, Hyderabad, with a CGPA of 7.84. My academic journey reflects my commitment to excellence and passion for technology, research, and software development.
+                I'm a dedicated Computer Science Engineering (IoT) student at Malla Reddy Engineering College, Hyderabad, with a CGPA of 7.91. My academic journey reflects my commitment to excellence and passion for technology, research, and software development.
               </p>
               <p className="text-gray-300 leading-relaxed mt-4">
                 With hands-on experience in web development and database management, I've successfully developed practical applications that solve real-world problems. My projects demonstrate my ability to work with modern tech stacks and deliver functional solutions.
@@ -178,7 +178,7 @@ import { Github, Linkedin, Mail, Phone, MapPin, Download, ExternalLink, Award, B
                   <p className="text-gray-400">Maisammaguda, Dhulapally, Medchal, Telangana</p>
                 </div>
                 <div className="text-right mt-4 md:mt-0">
-                  <p className="text-2xl font-bold text-purple-400">7.84/10</p>
+                  <p className="text-2xl font-bold text-purple-400">7.91/10</p>
                   <p className="text-gray-400">2022 – 2026</p>
                 </div>
               </div>
